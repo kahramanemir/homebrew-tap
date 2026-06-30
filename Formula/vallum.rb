@@ -1,25 +1,25 @@
 class Vallum < Formula
   desc "A Rust CLI proxy between AI agents and your shell — sanitizes secrets, flags prompt injections, strips ANSI, compresses output, audits commands."
   homepage "https://github.com/kahramanemir/Vallum"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.0/vallum-aarch64-apple-darwin.tar.xz"
-      sha256 "2619340288a8d816674af59aac5335ba036b5314ede485b359b6579334d16da5"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-aarch64-apple-darwin.tar.xz"
+      sha256 "5d079e5a7e736e9d6f26b8c3c225a0482c96d98f587c4fd2986725fe568b0543"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.0/vallum-x86_64-apple-darwin.tar.xz"
-      sha256 "1aac93a5ef155757c432d967da84e090bed574ccc858240a525b194c49860463"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-x86_64-apple-darwin.tar.xz"
+      sha256 "3e8da5873b4969945b4badc981245b8955af92a98830746f71dee8a48553f6f3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.0/vallum-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "342237a5f016372d6bd83e7d547c88f6a81b751bdd324bed9c92f44c154fc7d8"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "78af7435b1d113894e2a98f3589c25d505ebcbc750e1ebc12907dd7907fae5b0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.0/vallum-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "d8bd7ff7d3f8aa7b8fa3cd63102f7d073060aae6cdc5975b5aac7049a9dda737"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "68399506048e4006e822e5ef976127ec21424c100796c4ea16a21a4b699bdc36"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
