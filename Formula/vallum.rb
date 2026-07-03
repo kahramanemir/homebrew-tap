@@ -1,25 +1,25 @@
 class Vallum < Formula
-  desc "A Rust CLI proxy between AI agents and your shell — sanitizes secrets, flags prompt injections, strips ANSI, compresses output, audits commands."
+  desc "Security boundary between AI coding agents and your shell — redacts secrets, neutralizes prompt injection, sanitizes untrusted terminal output, audits every command."
   homepage "https://github.com/kahramanemir/Vallum"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-aarch64-apple-darwin.tar.xz"
-      sha256 "5d079e5a7e736e9d6f26b8c3c225a0482c96d98f587c4fd2986725fe568b0543"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.4.0/vallum-aarch64-apple-darwin.tar.xz"
+      sha256 "c5d0ebe3c0b0f03d534a6d24626b42c3ad2f3ea2d5aa2b65f2af2a498155ae26"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-x86_64-apple-darwin.tar.xz"
-      sha256 "3e8da5873b4969945b4badc981245b8955af92a98830746f71dee8a48553f6f3"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.4.0/vallum-x86_64-apple-darwin.tar.xz"
+      sha256 "01a399f480e3ca329d0dbd08110dcd01cf3f841a12e8664d3c20964591de2cd0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "78af7435b1d113894e2a98f3589c25d505ebcbc750e1ebc12907dd7907fae5b0"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.4.0/vallum-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "38752c098e3775e754725073853e6b1d51810a4aa21b7a053f804a3d35893800"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.3.1/vallum-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "68399506048e4006e822e5ef976127ec21424c100796c4ea16a21a4b699bdc36"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.4.0/vallum-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "198c4ab4ead3ee211d9000d5ae997d70c04339b302ae1f7fe1d7337eb7cc350d"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
