@@ -1,25 +1,25 @@
 class Vallum < Formula
   desc "Security boundary between AI coding agents and your shell — redacts secrets, neutralizes prompt injection, sanitizes untrusted terminal output, audits every command."
   homepage "https://github.com/kahramanemir/Vallum"
-  version "0.5.0"
+  version "0.5.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.0/vallum-aarch64-apple-darwin.tar.xz"
-      sha256 "7c13ad05414d857ec36ebd6d236dfd0d5bb841af0e7b6720963f3b3704acad87"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.1/vallum-aarch64-apple-darwin.tar.xz"
+      sha256 "160a959c340de9891b2e1e89d252d1a815c4940e1161432bc60081fa81df8a61"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.0/vallum-x86_64-apple-darwin.tar.xz"
-      sha256 "ab22de172241aab07e988b97375c04f0203ef53ed373484038f2f77c28cf69fe"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.1/vallum-x86_64-apple-darwin.tar.xz"
+      sha256 "81357c482b152c7eb1fc3e824a0315b4eb6c20ecb449770de20965c6dea2bdca"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.0/vallum-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "51b11b8e451f7776b76243c4a691e25250629c2c3f35a6cdf4c7e44e3560d25e"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.1/vallum-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "bdb0014a9e2d991c9cd1a5ab476630f98cd644bceba6beae1524427538e9d5e4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.0/vallum-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "43b976249931646260501f2479390dec4cdaa3f2e7469df9dcf35acd30d1b49b"
+      url "https://github.com/kahramanemir/Vallum/releases/download/v0.5.1/vallum-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "041664eb24a5df19b06149c10eaf9b9060de134fd44a383387fadcc3565caa17"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
